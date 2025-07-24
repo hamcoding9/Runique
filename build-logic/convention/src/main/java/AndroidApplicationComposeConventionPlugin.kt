@@ -11,7 +11,7 @@ class AndroidApplicationComposeConventionPlugin : Plugin<Project> {
         target.run {
             pluginManager.run {
                 apply("runique.android.application")
-                apply(libs.findPlugin("kotlin-compose").get().get().pluginId)
+                //apply(libs.findPlugin("kotlin-compose").get().get().pluginId)
             }
 
             val extension = extensions.getByType<ApplicationExtension>()
